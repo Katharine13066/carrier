@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <menu-config xmlns="http://schemas.haulmont.com/cuba/menu.xsd">
     <menu id="application-carrier" insertBefore="administration" caption="mainMsg://menu_config.application-carrier">
+        <menu id="carrier_reference" caption="mainMsg://menu_config.carrier_reference">
+            <menu id="carrier_transport" caption="mainMsg://menu_config.carrier_transport">
+                <item screen="carrier_Carrier.browse" caption="mainMsg://menu_config.carrier_Carrier.browse"/>
+                <item screen="carrier_Truck.browse" caption="mainMsg://menu_config.carrier_Truck.browse"/>
+            </menu>
+            <menu id="carrier_goods" caption="mainMsg://menu_config.carrier_goods">
+                <item screen="carrier_Goods.browse" caption="mainMsg://menu_config.carrier_Goods.browse"/>
+            </menu>
+        </menu>
+        <item screen="carrier_Delivery.browse" caption="mainMsg://menu_config.carrier_Delivery.browse"/>
     </menu>
 </menu-config>
